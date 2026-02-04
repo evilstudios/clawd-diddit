@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Monkey - Your Personal AI Sommelier</title>
+    <meta name="description" content="Your AI wine sommelier. Get expert recommendations, perfect food pairings, and cellar tracking. Try Wine Monkey free.">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #7c3aed;
+        }
+        
+        .cta-button {
+            background: #7c3aed;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #6d28d9;
+        }
+        
+        .cta-button-secondary {
+            background: transparent;
+            border: 2px solid #7c3aed;
+            color: #7c3aed;
+        }
+        
+        .cta-button-secondary:hover {
+            background: #7c3aed;
+            color: white;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero h2 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .problem {
+            padding: 80px 0;
+            background: #fff;
+            text-align: center;
+        }
+        
+        .problem h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #1f2937;
+        }
+        
+        .problem-scenarios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .scenario {
+            padding: 30px;
+            background: #fef2f2;
+            border-radius: 12px;
+            text-align: left;
+        }
+        
+        .scenario-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        
+        .features {
+            padding: 80px 0;
+            background: #f9fafb;
+        }
+        
+        .features h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #1f2937;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+        
+        .feature p {
+            color: #6b7280;
+        }
+        
+        .pricing {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .pricing h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #1f2937;
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .pricing-card.featured {
+            border: 3px solid #7c3aed;
+            transform: scale(1.05);
+        }
+        
+        .plan-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+        
+        .plan-price {
+            font-size: 48px;
+            font-weight: bold;
+            color: #7c3aed;
+            margin-bottom: 10px;
+        }
+        
+        .plan-price-period {
+            color: #6b7280;
+            font-size: 16px;
+        }
+        
+        .plan-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .plan-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .plan-features li::before {
+            content: "✓";
+            color: #7c3aed;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .final-cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .final-cta p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .pricing-card.featured { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🍷 Wine Monkey</div>
+                <a href="#pricing" class="cta-button">Try Free</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Your Personal Wine Sommelier - Powered by AI</h1>
+            <h2>Discover perfect wines, master food pairings, and track your cellar</h2>
+            <a href="#pricing" class="cta-button" style="font-size: 20px; padding: 18px 50px; margin-top: 20px; display: inline-block;">Try Free for 7 Days</a>
+        </div>
+    </section>
+
+    <section class="problem">
+        <div class="container">
+            <h2>Overwhelmed by Wine Choices?</h2>
+            
+            <div class="problem-scenarios">
+                <div class="scenario">
+                    <div class="scenario-icon">🤔</div>
+                    <strong>At the store:</strong> Standing in the wine aisle, no idea what to buy
+                </div>
+                <div class="scenario">
+                    <div class="scenario-icon">🍕</div>
+                    <strong>Making dinner:</strong> What wine pairs with tonight's meal?
+                </div>
+                <div class="scenario">
+                    <div class="scenario-icon">🎁</div>
+                    <strong>Buying a gift:</strong> Need something impressive but have no clue
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Wine Expertise, Instantly</h2>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🍷</div>
+                    <h3>Smart Recommendations</h3>
+                    <p>Get personalized wine suggestions based on your taste profile</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Food Pairing Expert</h3>
+                    <p>Perfect wine matches for any meal, instantly</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📦</div>
+                    <h3>Virtual Cellar</h3>
+                    <p>Track your collection, know when to drink each bottle</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">💸</div>
+                    <h3>Price Tracking</h3>
+                    <p>Get alerts when your favorite wines go on sale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Simple Pricing</h2>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="plan-name">Free</div>
+                    <div class="plan-price">$0</div>
+                    <div class="plan-price-period">forever</div>
+                    <ul class="plan-features">
+                        <li>5 recommendations/month</li>
+                        <li>Basic pairing advice</li>
+                    </ul>
+                    <a href="#" class="cta-button cta-button-secondary">Get Started Free</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="plan-name">Premium</div>
+                    <div class="plan-price">$4.99</div>
+                    <div class="plan-price-period">per month</div>
+                    <ul class="plan-features">
+                        <li>Unlimited recommendations</li>
+                        <li>Advanced pairing suggestions</li>
+                        <li>Cellar tracking (up to 100 bottles)</li>
+                        <li>Price alerts</li>
+                        <li>Tasting note templates</li>
+                        <li>Discord bot integration</li>
+                    </ul>
+                    <a href="#" class="cta-button">Try Free for 7 Days</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Never Buy the Wrong Wine Again</h2>
+            <p>Join wine lovers getting expert recommendations</p>
+            <a href="#pricing" class="cta-button" style="background: white; color: #7c3aed; font-size: 20px; padding: 18px 50px;">Start Your Free Trial</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Wine Monkey - Your Personal AI Sommelier</p>
+        </div>
+    </footer>
+</body>
+</html>

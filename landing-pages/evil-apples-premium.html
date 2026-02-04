@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evil Apples Premium - Unlock Exclusive Content</title>
+    <meta name="description" content="Upgrade to Evil Apples Premium for exclusive card decks, ad-free gameplay, custom avatars, and early access to new features. Join 15,000+ Premium members!">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #fff;
+            background: #0f0f0f;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #1a1a1a;
+            padding: 20px 0;
+            border-bottom: 2px solid #dc2626;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #dc2626;
+        }
+        
+        .cta-button {
+            background: #dc2626;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+        }
+        
+        .cta-button:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px rgba(220, 38, 38, 0.8);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: "🍎";
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.1;
+            top: -50px;
+            right: -50px;
+        }
+        
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero h2 {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .premium-badge {
+            background: #fbbf24;
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .benefits {
+            padding: 80px 0;
+            background: #1a1a1a;
+        }
+        
+        .benefits h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #dc2626;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit {
+            background: #262626;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid #dc2626;
+            transition: transform 0.3s;
+        }
+        
+        .benefit:hover {
+            transform: translateX(5px);
+        }
+        
+        .benefit-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .benefit h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #dc2626;
+        }
+        
+        .benefit p {
+            color: #a3a3a3;
+            line-height: 1.6;
+        }
+        
+        .comparison {
+            padding: 80px 0;
+            background: #0f0f0f;
+        }
+        
+        .comparison h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .comparison-table {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            padding: 20px;
+            border-bottom: 1px solid #262626;
+        }
+        
+        .comparison-row:first-child {
+            background: #dc2626;
+            font-weight: bold;
+        }
+        
+        .comparison-row:nth-child(even) {
+            background: #1f1f1f;
+        }
+        
+        .checkmark {
+            color: #10b981;
+            font-weight: bold;
+        }
+        
+        .xmark {
+            color: #666;
+        }
+        
+        .pricing {
+            padding: 80px 0;
+            background: #1a1a1a;
+            text-align: center;
+        }
+        
+        .pricing h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+        
+        .pricing-card {
+            background: #262626;
+            padding: 40px;
+            border-radius: 12px;
+            border: 2px solid #404040;
+        }
+        
+        .pricing-card.featured {
+            border: 3px solid #dc2626;
+            background: #1f1f1f;
+            position: relative;
+        }
+        
+        .best-value {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fbbf24;
+            color: #000;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .plan-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .plan-price {
+            font-size: 48px;
+            font-weight: bold;
+            color: #dc2626;
+            margin-bottom: 10px;
+        }
+        
+        .plan-period {
+            color: #a3a3a3;
+            margin-bottom: 20px;
+        }
+        
+        .savings {
+            background: #10b981;
+            color: #000;
+            padding: 8px 15px;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .social-proof {
+            padding: 60px 0;
+            background: #0f0f0f;
+            text-align: center;
+        }
+        
+        .social-proof h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #dc2626;
+        }
+        
+        .member-count {
+            font-size: 48px;
+            font-weight: bold;
+            color: #fbbf24;
+            margin-bottom: 10px;
+        }
+        
+        .final-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        
+        footer {
+            background: #000;
+            padding: 40px 0;
+            text-align: center;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .comparison-row { grid-template-columns: 2fr 1fr 1fr; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🍎 Evil Apples</div>
+                <a href="#pricing" class="cta-button">Go Premium</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="premium-badge">Premium</div>
+            <h1>Unlock Evil Apples Premium</h1>
+            <h2>Exclusive cards, zero ads, and premium perks</h2>
+            <a href="#pricing" class="cta-button" style="font-size: 20px; padding: 18px 50px; margin-top: 20px; display: inline-block;">Upgrade Now</a>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>What You Get with Premium</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <span class="benefit-icon">🎴</span>
+                    <h3>Exclusive Card Decks</h3>
+                    <p>Access to Premium-only card decks updated weekly with the darkest, funniest content</p>
+                </div>
+                
+                <div class="benefit">
+                    <span class="benefit-icon">🚫</span>
+                    <h3>No Ads - Ever</h3>
+                    <p>Uninterrupted gameplay. No more ads between rounds. Pure evil fun.</p>
+                </div>
+                
+                <div class="benefit">
+                    <span class="benefit-icon">👑</span>
+                    <h3>Premium Badge</h3>
+                    <p>Show off your Premium status with a crown badge next to your name</p>
+                </div>
+                
+                <div class="benefit">
+                    <span class="benefit-icon">🎨</span>
+                    <h3>Custom Avatar Frames</h3>
+                    <p>Exclusive avatar frames and themes to personalize your profile</p>
+                </div>
+                
+                <div class="benefit">
+                    <span class="benefit-icon">⚡</span>
+                    <h3>Early Access</h3>
+                    <p>Be the first to try new features, game modes, and card decks</p>
+                </div>
+                
+                <div class="benefit">
+                    <span class="benefit-icon">🏆</span>
+                    <h3>Exclusive Tournaments</h3>
+                    <p>Premium-only tournaments with prizes and bragging rights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison">
+        <div class="container">
+            <h2>Free vs Premium</h2>
+            
+            <div class="comparison-table">
+                <div class="comparison-row">
+                    <div>Feature</div>
+                    <div>Free</div>
+                    <div>Premium</div>
+                </div>
+                <div class="comparison-row">
+                    <div>Base card decks</div>
+                    <div class="checkmark">✓</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                <div class="comparison-row">
+                    <div>Exclusive Premium decks</div>
+                    <div class="xmark">✗</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                <div class="comparison-row">
+                    <div>Ad-free gameplay</div>
+                    <div class="xmark">✗</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                <div class="comparison-row">
+                    <div>Custom avatars & themes</div>
+                    <div class="xmark">✗</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                <div class="comparison-row">
+                    <div>Premium badge</div>
+                    <div class="xmark">✗</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                <div class="comparison-row">
+                    <div>Exclusive tournaments</div>
+                    <div class="xmark">✗</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                <div class="comparison-row">
+                    <div>Early access to features</div>
+                    <div class="xmark">✗</div>
+                    <div class="checkmark">✓</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="plan-name">Monthly</div>
+                    <div class="plan-price">$4.99</div>
+                    <div class="plan-period">per month</div>
+                    <a href="#" class="cta-button" style="width: 100%; display: block; text-align: center;">Go Monthly</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="best-value">BEST VALUE</div>
+                    <div class="plan-name">Annual</div>
+                    <div class="plan-price">$39.99</div>
+                    <div class="plan-period">per year</div>
+                    <div class="savings">Save 33% - Only $3.33/month!</div>
+                    <a href="#" class="cta-button" style="width: 100%; display: block; text-align: center;">Go Annual</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <div class="container">
+            <h3>Join the Premium Community</h3>
+            <div class="member-count">15,000+</div>
+            <p style="color: #a3a3a3;">Premium members enjoying ad-free gameplay</p>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Go Premium?</h2>
+            <a href="#pricing" class="cta-button" style="background: #fbbf24; color: #000; font-size: 20px; padding: 18px 50px; display: inline-block; margin-top: 20px;">Upgrade to Premium Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Evil Apples - The Free, Fun, Filthy Mobile Game</p>
+        </div>
+    </footer>
+</body>
+</html>

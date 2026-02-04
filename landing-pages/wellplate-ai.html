@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellPlate.AI - Your Personal AI Nutritionist</title>
+    <meta name="description" content="Get personalized meal plans and nutrition advice from an AI nutritionist. Cheaper than a single nutritionist visit. Try WellPlate AI free for 7 days.">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #10b981;
+        }
+        
+        .cta-button {
+            background: #10b981;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #059669;
+        }
+        
+        .cta-button-secondary {
+            background: transparent;
+            border: 2px solid #10b981;
+            color: #10b981;
+        }
+        
+        .cta-button-secondary:hover {
+            background: #10b981;
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero h2 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .hero .cta-button {
+            font-size: 18px;
+            padding: 16px 40px;
+        }
+        
+        /* Problem Section */
+        .problem {
+            padding: 80px 0;
+            background: #fff;
+        }
+        
+        .problem h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1f2937;
+        }
+        
+        .pain-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .pain-point {
+            padding: 30px;
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+        }
+        
+        .pain-point::before {
+            content: "❌";
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        /* Solution Section */
+        .solution {
+            padding: 80px 0;
+            background: #f9fafb;
+        }
+        
+        .solution h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1f2937;
+        }
+        
+        .solution-text {
+            text-align: center;
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            color: #4b5563;
+        }
+        
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+        
+        .feature p {
+            color: #6b7280;
+        }
+        
+        /* Social Proof */
+        .social-proof {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .social-proof h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #1f2937;
+        }
+        
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial {
+            padding: 30px;
+            background: #f9fafb;
+            border-radius: 12px;
+            border-left: 4px solid #10b981;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #4b5563;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #10b981;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            padding: 80px 0;
+            background: #f9fafb;
+        }
+        
+        .pricing h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #1f2937;
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .pricing-card.featured {
+            border: 3px solid #10b981;
+            transform: scale(1.05);
+        }
+        
+        .pricing-badge {
+            background: #10b981;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .plan-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+        
+        .plan-price {
+            font-size: 48px;
+            font-weight: bold;
+            color: #10b981;
+            margin-bottom: 10px;
+        }
+        
+        .plan-price-period {
+            color: #6b7280;
+            font-size: 16px;
+        }
+        
+        .plan-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .plan-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .plan-features li::before {
+            content: "✓";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        /* CTA Section */
+        .final-cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .final-cta p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .guarantee {
+            margin-top: 30px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .guarantee::before {
+            content: "🔒";
+            margin-right: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero h2 {
+                font-size: 18px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🥗 WellPlate.AI</div>
+                <a href="#pricing" class="cta-button">Start Free Trial</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Personal AI Nutritionist - In Your Pocket</h1>
+            <h2>Get expert meal plans, nutrition tracking, and personalized advice for less than a single session with a nutritionist</h2>
+            <div class="hero-buttons">
+                <a href="#pricing" class="cta-button">Start Your Free Trial</a>
+                <a href="#features" class="cta-button cta-button-secondary">See How It Works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>Tired of generic diet plans that don't work for YOUR body?</h2>
+            <div class="pain-points">
+                <div class="pain-point">
+                    Most meal plans ignore your preferences, allergies, and lifestyle
+                </div>
+                <div class="pain-point">
+                    Hiring a nutritionist costs $100-300 per session
+                </div>
+                <div class="pain-point">
+                    Calorie counting apps are tedious and don't provide expert guidance
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="features">
+        <div class="container">
+            <h2>Meet Your AI Nutritionist</h2>
+            <p class="solution-text">WellPlate AI combines certified nutritionist knowledge with AI to create personalized meal plans that actually work for you.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🥗</div>
+                    <h3>Personalized Meal Plans</h3>
+                    <p>Tailored to your goals, dietary restrictions, and taste preferences</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📸</div>
+                    <h3>Smart Nutrition Tracking</h3>
+                    <p>Scan your food with AI - no manual entry needed</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">💬</div>
+                    <h3>Expert Guidance 24/7</h3>
+                    <p>Ask nutrition questions anytime, get expert answers instantly</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Progress Tracking</h3>
+                    <p>See your health improvements with detailed analytics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <h2>What Our Members Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Lost 15 lbs in 6 weeks following WellPlate meal plans. Finally a plan I can stick to!"</p>
+                    <p class="testimonial-author">- Sarah M.</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"Cheaper than one nutritionist visit, but I get expert help every single day."</p>
+                    <p class="testimonial-author">- Mike T.</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"The AI food scanner is magic. No more tedious manual tracking!"</p>
+                    <p class="testimonial-author">- Jennifer L.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="plan-name">Free</div>
+                    <div class="plan-price">$0</div>
+                    <div class="plan-price-period">forever</div>
+                    <ul class="plan-features">
+                        <li>3 meal plans/month</li>
+                        <li>Basic nutrition tracking</li>
+                        <li>Limited AI scans</li>
+                    </ul>
+                    <a href="#" class="cta-button cta-button-secondary">Get Started Free</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Save 34%</div>
+                    <div class="plan-name">Premium</div>
+                    <div class="plan-price">$9.99</div>
+                    <div class="plan-price-period">per month (or $79/year)</div>
+                    <ul class="plan-features">
+                        <li>Unlimited meal plans</li>
+                        <li>Advanced nutrition tracking</li>
+                        <li>Unlimited AI food scanning</li>
+                        <li>24/7 AI nutritionist chat</li>
+                        <li>Custom recipe generator</li>
+                        <li>Progress analytics & reports</li>
+                    </ul>
+                    <a href="#" class="cta-button">Start Your Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Start Your Health Journey Today</h2>
+            <p>Join thousands transforming their health with WellPlate AI</p>
+            <a href="#pricing" class="cta-button" style="background: white; color: #10b981; font-size: 20px; padding: 18px 50px;">Start Your Free Trial</a>
+            <p class="guarantee">🔒 7-Day Money Back Guarantee</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 WellPlate.AI - Your Personal AI Nutritionist</p>
+        </div>
+    </footer>
+</body>
+</html>
