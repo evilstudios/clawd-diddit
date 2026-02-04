@@ -1,0 +1,1741 @@
+{
+  "post_library": {
+    "wellplate": {
+      "twitter": [
+        {
+          "text": "Nutritionist visit: $150\n\nAI nutritionist in your pocket: $9.99/month\n\nSame expert advice, 93% cheaper.\n\nTry WellPlate AI free \u2192 [link]",
+          "type": "value_prop",
+          "hashtags": [
+            "#Nutrition",
+            "#HealthTech",
+            "#AI"
+          ]
+        },
+        {
+          "text": "Stop counting calories manually.\n\nJust take a photo. Our AI does the rest.\n\n7-day free trial \ud83d\udc47",
+          "type": "feature_highlight"
+        },
+        {
+          "text": "Things that cost more than WellPlate AI:\n\n\u2022 2 Starbucks lattes\n\u2022 Netflix\n\u2022 A single salad at Sweetgreen\n\u2022 One nutrition book\n\nBut somehow people think they can't afford a nutritionist \ud83e\udd14",
+          "type": "objection_handler"
+        },
+        {
+          "text": "Your body deserves a meal plan designed FOR YOU.\n\nNot some generic \"eat 1,500 calories\" BS.\n\nGet a personalized plan in 60 seconds \u2192 [link]",
+          "type": "pain_point"
+        }
+      ],
+      "linkedin": [
+        {
+          "text": "We built an AI nutritionist that costs less than a single consultation.\n\nHere's how we did it and what we learned about democratizing health expertise \ud83e\uddf5",
+          "type": "thought_leadership"
+        }
+      ],
+      "instagram": [
+        {
+          "caption": "POV: You're eating healthy without spending 3 hours meal prepping \ud83e\udd57\u2728\n\n#HealthyEating #MealPlanning #Nutrition #WellPlateAI",
+          "content_idea": "Carousel: Before/After of someone's meal planning routine",
+          "type": "lifestyle"
+        }
+      ],
+      "tiktok": [
+        {
+          "hook": "This app reads nutrition labels so you don't have to",
+          "content": "Demo: Scan food with phone, AI instantly shows macros/nutrition",
+          "cta": "Link in bio",
+          "type": "feature_demo"
+        }
+      ]
+    },
+    "afoodable": {
+      "twitter": [
+        {
+          "text": "You're throwing away $125/month in food.\n\nAfoodable costs $7.99/month.\n\nDo the math \ud83d\udcca",
+          "type": "roi_focused"
+        },
+        {
+          "text": "Random ingredients in your fridge:\n\u2022 Half an onion\n\u2022 2 eggs\n\u2022 Random vegetables\n\u2022 Leftover rice\n\nAfoodable AI: \"Here's 5 delicious recipes you can make right now\"\n\nThis is the future.",
+          "type": "feature_demo"
+        },
+        {
+          "text": "The guilt of throwing away food is real.\n\nWe built an app that helps you actually USE everything you buy.\n\nTry it free \u2192 [link]",
+          "type": "emotional"
+        }
+      ],
+      "instagram": [
+        {
+          "caption": "Saved $89 this month by not wasting food \ud83c\udf89\n\nAfoodable helps you use EVERYTHING in your fridge\n\n#ZeroWaste #SaveMoney #FoodWaste",
+          "content_idea": "Before/after of fridge organization + monthly savings tracker"
+        }
+      ],
+      "tiktok": [
+        {
+          "hook": "POV: You're about to throw away food",
+          "content": "*Opens Afoodable app* *Gets 3 recipe ideas* *Makes delicious dinner*",
+          "sound": "Trending sound",
+          "type": "pov"
+        }
+      ]
+    },
+    "wine_monkey": {
+      "twitter": [
+        {
+          "text": "Wine pairing doesn't have to be pretentious.\n\n\"What wine goes with pizza?\"\n\nWine Monkey: \"Chianti or Barbera\"\n\nDone. Easy. Delicious.",
+          "type": "approachable"
+        },
+        {
+          "text": "Your phone knows:\n\u2022 The weather\n\u2022 Your schedule\n\u2022 How many steps you took\n\nBut it can't tell you what wine to order?\n\nFixed that \u2192 [link]",
+          "type": "problem_solution"
+        }
+      ]
+    },
+    "evil_apples": {
+      "twitter": [
+        {
+          "text": "If Cards Against Humanity and your phone had a baby, it would be Evil Apples.\n\n8,000+ offensive cards. Free to play.\n\nDownload: [link]",
+          "type": "value_prop"
+        },
+        {
+          "text": "Evil Apples drinking game:\n\nTake a shot every time you laugh.\n\n*Disclaimer: You will die*",
+          "type": "viral/funny"
+        }
+      ],
+      "tiktok": [
+        {
+          "hook": "Playing Evil Apples with my friends and...",
+          "content": "*Shows hilarious card combination* *Everyone loses it*",
+          "type": "gameplay"
+        }
+      ],
+      "instagram": [
+        {
+          "caption": "Game night but make it FILTHY \ud83c\udf4e\n\n#EvilApples #PartyGames #AdultHumor",
+          "content_idea": "Friends playing together, reactions"
+        }
+      ]
+    }
+  },
+  "content_calendar": [
+    {
+      "date": "2026-02-04",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-05",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-06",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-09",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-10",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-16",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-20",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-23",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-24",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-25",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-03-02",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-03-03",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-03-04",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-03-05",
+      "posts": {
+        "wellplate": [
+          {
+            "time": "08:00",
+            "platform": "twitter",
+            "type": "educational"
+          },
+          {
+            "time": "13:00",
+            "platform": "instagram",
+            "type": "lifestyle"
+          },
+          {
+            "time": "19:00",
+            "platform": "tiktok",
+            "type": "feature_demo"
+          }
+        ],
+        "afoodable": [
+          {
+            "time": "09:00",
+            "platform": "twitter",
+            "type": "value_prop"
+          },
+          {
+            "time": "15:00",
+            "platform": "instagram",
+            "type": "user_story"
+          }
+        ],
+        "wine_monkey": [
+          {
+            "time": "17:00",
+            "platform": "twitter",
+            "type": "tip"
+          }
+        ],
+        "evil_apples": [
+          {
+            "time": "12:00",
+            "platform": "twitter",
+            "type": "viral"
+          },
+          {
+            "time": "20:00",
+            "platform": "tiktok",
+            "type": "gameplay"
+          }
+        ]
+      }
+    }
+  ],
+  "posting_strategy": {
+    "frequency": {
+      "twitter": "3x per product per day",
+      "instagram": "1-2x per product per day",
+      "tiktok": "1x per product per day",
+      "linkedin": "3x per week (WellPlate/Afoodable only)"
+    },
+    "best_times": {
+      "twitter": [
+        "8am",
+        "1pm",
+        "7pm"
+      ],
+      "instagram": [
+        "9am",
+        "3pm",
+        "8pm"
+      ],
+      "tiktok": [
+        "12pm",
+        "7pm",
+        "9pm"
+      ]
+    },
+    "hashtag_strategy": "Use 3-5 relevant hashtags on Instagram, 1-2 on Twitter",
+    "engagement": "Respond to all comments within 2 hours"
+  },
+  "automation_tools": [
+    "Buffer or Hootsuite for scheduling",
+    "Canva for graphics",
+    "CapCut for TikTok editing"
+  ]
+}

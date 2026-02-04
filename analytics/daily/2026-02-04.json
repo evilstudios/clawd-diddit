@@ -1,0 +1,51 @@
+{
+  "date": "2026-02-04",
+  "metrics": {
+    "evil_apples": {
+      "dau": null,
+      "mau": null,
+      "downloads_ios": null,
+      "downloads_android": null,
+      "revenue_iap": null,
+      "revenue_ads": null,
+      "revenue_physical": null,
+      "retention_d1": null,
+      "retention_d7": null,
+      "retention_d30": null,
+      "arpu": null
+    },
+    "wellplate_ai": {
+      "visitors": null,
+      "signups_free": null,
+      "signups_paid": null,
+      "mrr": null,
+      "churn_rate": null,
+      "conversion_rate": null,
+      "cac": null,
+      "ltv": null
+    },
+    "afoodable_ai": {
+      "visitors": null,
+      "signups_free": null,
+      "signups_paid": null,
+      "mrr": null,
+      "churn_rate": null,
+      "conversion_rate": null,
+      "feature_usage": {}
+    },
+    "wine_monkey": {
+      "active_servers": null,
+      "active_users": null,
+      "paid_users": null,
+      "mrr": null,
+      "interactions_daily": null
+    }
+  },
+  "combined": {
+    "total_mrr": 0,
+    "evil_apples_revenue": 0,
+    "total_revenue": 0,
+    "target_mrr": 20000,
+    "progress_percent": 0
+  }
+}

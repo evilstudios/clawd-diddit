@@ -1,0 +1,271 @@
+#!/usr/bin/env python3
+"""
+SEO Content Generator
+Creates blog posts and content optimized for search traffic
+"""
+
+class SEOContentGenerator:
+    """Generate SEO-optimized content for organic traffic"""
+    
+    @staticmethod
+    def generate_wellplate_content_calendar():
+        """30-day content calendar for WellPlate AI"""
+        return [
+            {
+                'title': 'Best Meal Planning Apps for Weight Loss in 2026',
+                'target_keyword': 'meal planning app',
+                'search_volume': 'High',
+                'difficulty': 'Medium',
+                'angle': 'Comparison post featuring WellPlate AI',
+                'cta': 'Try WellPlate free for 7 days'
+            },
+            {
+                'title': 'How Much Does a Nutritionist Cost? (And Cheaper Alternatives)',
+                'target_keyword': 'nutritionist cost',
+                'search_volume': 'Medium',
+                'difficulty': 'Low',
+                'angle': 'Show WellPlate saves 95% vs traditional nutritionist'
+            },
+            {
+                'title': 'AI Nutritionist vs Real Nutritionist: Which Should You Choose?',
+                'target_keyword': 'AI nutritionist',
+                'search_volume': 'Medium',
+                'difficulty': 'Low'
+            },
+            {
+                'title': '30-Day Meal Plan for [Weight Loss/Muscle Gain/Diabetes/etc]',
+                'target_keyword': 'meal plan for [condition]',
+                'variants': ['weight loss', 'muscle gain', 'diabetes', 'keto', 'vegan'],
+                'search_volume': 'Very High',
+                'difficulty': 'Medium',
+                'angle': 'Provide actual free meal plan, pitch app for customization'
+            },
+            {
+                'title': 'Macro Calculator: How to Calculate Your Macros',
+                'target_keyword': 'macro calculator',
+                'search_volume': 'High',
+                'difficulty': 'Medium',
+                'angle': 'Free calculator tool embedded, pitch WellPlate for tracking'
+            },
+            {
+                'title': 'What to Eat Before and After a Workout',
+                'target_keyword': 'pre workout meal',
+                'search_volume': 'High',
+            },
+        ]
+    
+    @staticmethod
+    def generate_afoodable_content_calendar():
+        """Content calendar for Afoodable AI"""
+        return [
+            {
+                'title': '50 Ways to Use Leftover Chicken (Before It Goes Bad)',
+                'target_keyword': 'leftover chicken recipes',
+                'search_volume': 'Very High',
+                'difficulty': 'Low',
+                'angle': 'Practical list, pitch Afoodable for automatic suggestions'
+            },
+            {
+                'title': 'How Much Food Does the Average Family Waste? (Shocking Stats)',
+                'target_keyword': 'food waste statistics',
+                'search_volume': 'Medium',
+                'angle': 'Eye-opening data, position Afoodable as solution'
+            },
+            {
+                'title': 'Food Expiration Dates Explained: When to Keep, When to Toss',
+                'target_keyword': 'food expiration dates',
+                'search_volume': 'High',
+                'difficulty': 'Medium'
+            },
+            {
+                'title': 'How to Save Money on Groceries: 25 Expert Tips',
+                'target_keyword': 'save money on groceries',
+                'search_volume': 'Very High',
+                'difficulty': 'High',
+                'angle': 'Include Afoodable as tip #1'
+            },
+            {
+                'title': 'Zero Waste Kitchen: Complete Beginner\'s Guide',
+                'target_keyword': 'zero waste kitchen',
+                'search_volume': 'Medium'
+            },
+            {
+                'title': 'Best Apps for Reducing Food Waste in 2026',
+                'target_keyword': 'food waste app',
+                'search_volume': 'Low',
+                'difficulty': 'Very Low',
+                'angle': 'Feature Afoodable prominently'
+            },
+        ]
+    
+    @staticmethod
+    def generate_wine_monkey_content_calendar():
+        """Content calendar for Wine Monkey"""
+        return [
+            {
+                'title': 'Wine Pairing Guide: The Complete Chart',
+                'target_keyword': 'wine pairing chart',
+                'search_volume': 'High',
+                'difficulty': 'Medium',
+                'angle': 'Free downloadable chart, pitch Wine Monkey for instant pairings'
+            },
+            {
+                'title': 'Best Wine Apps for iPhone and Android',
+                'target_keyword': 'wine app',
+                'search_volume': 'Medium',
+                'angle': 'Feature Wine Monkey'
+            },
+            {
+                'title': 'How to Start a Wine Collection on a Budget',
+                'target_keyword': 'wine collection',
+                'search_volume': 'Medium'
+            },
+            {
+                'title': 'What Wine Goes With Pizza? (Every Type)',
+                'target_keyword': 'wine with pizza',
+                'search_volume': 'Medium',
+                'difficulty': 'Low'
+            },
+        ]
+    
+    @staticmethod
+    def generate_evil_apples_content():
+        """Content for Evil Apples (SEO + viral)"""
+        return [
+            {
+                'title': 'Funniest Evil Apples Combinations of All Time',
+                'type': 'Viral/Social',
+                'angle': 'User-generated content, screenshots of hilarious plays',
+                'cta': 'Download Evil Apples to create your own'
+            },
+            {
+                'title': 'Evil Apples vs Cards Against Humanity: Which is Better?',
+                'target_keyword': 'games like cards against humanity',
+                'search_volume': 'High',
+                'angle': 'Comparison showing Evil Apples advantages (digital, more cards, free)'
+            },
+            {
+                'title': 'Best Party Games for Adults (Mobile & Online)',
+                'target_keyword': 'party games for adults',
+                'search_volume': 'Very High',
+                'angle': 'List post featuring Evil Apples'
+            },
+            {
+                'title': 'How to Play Evil Apples: Rules and Strategy Guide',
+                'target_keyword': 'how to play evil apples',
+                'search_volume': 'Medium',
+                'difficulty': 'Very Low'
+            },
+        ]
+    
+    @staticmethod
+    def generate_meta_descriptions():
+        """Generate SEO meta descriptions for each product"""
+        return {
+            'wellplate_homepage': 'Get personalized meal plans and nutrition advice from an AI nutritionist. Cheaper than a single nutritionist visit. Try WellPlate AI free for 7 days.',
+            'afoodable_homepage': 'Stop wasting food and money. Afoodable AI turns your leftovers into delicious meals. Save $50+/month on groceries. Try free!',
+            'wine_monkey_homepage': 'Your AI wine sommelier. Get expert recommendations, perfect food pairings, and cellar tracking. Try Wine Monkey free.',
+            'evil_apples_homepage': 'Evil Apples is the free, filthy party game like Cards Against Humanity. 8,000+ cards, play with friends or strangers. Download now!',
+        }
+
+
+def generate_content_briefs():
+    """Generate detailed content briefs"""
+    gen = SEOContentGenerator()
+    
+    # Let's create one full brief as an example
+    brief_example = {
+        'title': 'Best Meal Planning Apps for Weight Loss in 2026',
+        'target_keyword': 'meal planning app',
+        'word_count': '2,000-2,500',
+        'outline': [
+            {
+                'section': 'Introduction',
+                'subsections': [
+                    'Why meal planning is crucial for weight loss',
+                    'What to look for in a meal planning app',
+                ]
+            },
+            {
+                'section': 'Top 10 Meal Planning Apps Reviewed',
+                'subsections': [
+                    '1. WellPlate AI (our recommendation)',
+                    '2. MyFitnessPal',
+                    '3. Lose It!',
+                    '4. Noom',
+                    '5. PlateJoy',
+                    '6-10. Others...'
+                ]
+            },
+            {
+                'section': 'Comparison Chart',
+                'content': 'Table comparing price, features, ease of use'
+            },
+            {
+                'section': 'How to Choose the Right App for You',
+            },
+            {
+                'section': 'Conclusion',
+                'cta': 'Try WellPlate AI free for 7 days'
+            }
+        ],
+        'internal_links': [
+            '/blog/how-much-does-nutritionist-cost',
+            '/blog/ai-nutritionist-vs-real-nutritionist',
+        ],
+        'external_links': [
+            'Link to studies on meal planning effectiveness',
+            'Link to competitor apps (with affiliate links if possible)'
+        ],
+        'images_needed': [
+            'Hero image: person using meal planning app',
+            'Screenshots of each app reviewed',
+            'Comparison chart/table',
+        ],
+        'cta_placement': [
+            'Top of post: "Skip the research - Try WellPlate AI free"',
+            'After #1 recommendation',
+            'End of post CTA box'
+        ]
+    }
+    
+    return {
+        'content_calendars': {
+            'wellplate': gen.generate_wellplate_content_calendar(),
+            'afoodable': gen.generate_afoodable_content_calendar(),
+            'wine_monkey': gen.generate_wine_monkey_content_calendar(),
+            'evil_apples': gen.generate_evil_apples_content(),
+        },
+        'meta_descriptions': gen.generate_meta_descriptions(),
+        'example_brief': brief_example
+    }
+
+
+if __name__ == '__main__':
+    import json
+    
+    print("📝 Generating SEO content strategy...\n")
+    
+    content = generate_content_briefs()
+    
+    output_file = '/root/clawd/marketing/seo_content_strategy.json'
+    with open(output_file, 'w') as f:
+        json.dump(content, f, indent=2)
+    
+    print(f"✅ SEO strategy saved to: {output_file}\n")
+    
+    # Print summary
+    print("📋 Content Calendar Summary:")
+    for product, articles in content['content_calendars'].items():
+        print(f"\n{product.upper()}:")
+        print(f"  {len(articles)} article ideas")
+        for i, article in enumerate(articles[:3], 1):
+            print(f"    {i}. {article['title']}")
+        if len(articles) > 3:
+            print(f"    ... and {len(articles) - 3} more")
+    
+    print("\n💡 Next steps:")
+    print("  1. Prioritize high-volume, low-difficulty keywords")
+    print("  2. Write 2-3 articles per week")
+    print("  3. Track rankings and organic traffic")
+    print("  4. Build internal linking structure")

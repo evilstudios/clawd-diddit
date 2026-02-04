@@ -1,0 +1,233 @@
+{
+  "wellplate_landing": {
+    "headline": "Your Personal AI Nutritionist - In Your Pocket",
+    "subheadline": "Get expert meal plans, nutrition tracking, and personalized advice for less than a single session with a nutritionist",
+    "problem": "Tired of generic diet plans that don't work for YOUR body?",
+    "agitation": [
+      "Most meal plans ignore your preferences, allergies, and lifestyle",
+      "Hiring a nutritionist costs $100-300 per session",
+      "Calorie counting apps are tedious and don't provide expert guidance"
+    ],
+    "solution": "WellPlate AI combines certified nutritionist knowledge with AI to create personalized meal plans that actually work for you.",
+    "features": [
+      {
+        "title": "Personalized Meal Plans",
+        "description": "Tailored to your goals, dietary restrictions, and taste preferences",
+        "icon": "\ud83e\udd57"
+      },
+      {
+        "title": "Smart Nutrition Tracking",
+        "description": "Scan your food with AI - no manual entry needed",
+        "icon": "\ud83d\udcf8"
+      },
+      {
+        "title": "Expert Guidance 24/7",
+        "description": "Ask nutrition questions anytime, get expert answers instantly",
+        "icon": "\ud83d\udcac"
+      },
+      {
+        "title": "Progress Tracking",
+        "description": "See your health improvements with detailed analytics",
+        "icon": "\ud83d\udcca"
+      }
+    ],
+    "pricing": {
+      "free": {
+        "price": "$0",
+        "features": [
+          "3 meal plans/month",
+          "Basic nutrition tracking",
+          "Limited AI scans"
+        ]
+      },
+      "premium": {
+        "price": "$9.99/month",
+        "annual_price": "$79/year",
+        "savings": "Save 34%",
+        "features": [
+          "Unlimited meal plans",
+          "Advanced nutrition tracking",
+          "Unlimited AI food scanning",
+          "24/7 AI nutritionist chat",
+          "Custom recipe generator",
+          "Progress analytics & reports"
+        ]
+      }
+    },
+    "social_proof": [
+      "\"Lost 15 lbs in 6 weeks following WellPlate meal plans. Finally a plan I can stick to!\" - Sarah M.",
+      "\"Cheaper than one nutritionist visit, but I get expert help every single day.\" - Mike T.",
+      "\"The AI food scanner is magic. No more tedious manual tracking!\" - Jennifer L."
+    ],
+    "cta_primary": "Start Your Free Trial",
+    "cta_secondary": "See How It Works",
+    "guarantee": "7-Day Money Back Guarantee",
+    "urgency": null
+  },
+  "afoodable_landing": {
+    "headline": "Stop Throwing Money in the Trash",
+    "subheadline": "Turn your leftovers into delicious meals. Save $50+/month on groceries.",
+    "problem": "The average family throws away $1,500/year in wasted food.",
+    "agitation": [
+      "Vegetables rotting in your fridge before you use them",
+      "Buying the same groceries while perfectly good food sits unused",
+      "Feeling guilty about waste but not knowing what to cook with random ingredients"
+    ],
+    "solution": "Afoodable AI scans your fridge, creates recipes from what you have, and helps you buy only what you'll actually use.",
+    "value_prop": "This app literally pays for itself - save $50-100/month on groceries for just $7.99/month",
+    "features": [
+      {
+        "title": "Smart Fridge Scanner",
+        "description": "AI identifies ingredients and tracks expiration dates",
+        "icon": "\ud83d\udcf1"
+      },
+      {
+        "title": "Creative Recipe Generator",
+        "description": "Turn random leftovers into delicious meals",
+        "icon": "\ud83d\udc68\u200d\ud83c\udf73"
+      },
+      {
+        "title": "Shopping List Optimizer",
+        "description": "Buy only what you need based on what you already have",
+        "icon": "\ud83d\uded2"
+      },
+      {
+        "title": "Waste Tracker",
+        "description": "Gamify reducing waste - see your savings grow",
+        "icon": "\ud83d\udcb0"
+      }
+    ],
+    "pricing": {
+      "premium": {
+        "price": "$7.99/month",
+        "annual_price": "$59/year",
+        "savings": "Save 38%",
+        "roi": "Avg. user saves $67/month on groceries = 8.4x ROI"
+      }
+    },
+    "social_proof": [
+      "\"Saved $89 in my first month. The app paid for itself 11x over!\" - Rachel P.",
+      "\"No more guilt about throwing food away. I actually use everything now.\" - David K.",
+      "\"Amazed at the creative recipes it generates. Leftovers never tasted so good!\" - Maria S."
+    ],
+    "cta_primary": "Start Saving Money Today",
+    "guarantee": "30-Day Money Back Guarantee - If you don't save more than the subscription cost, we refund you"
+  },
+  "wine_monkey_landing": {
+    "headline": "Your Personal Wine Sommelier - Powered by AI",
+    "subheadline": "Discover perfect wines, master food pairings, and track your cellar",
+    "problem": "Overwhelmed by the wine selection? Don't know what pairs with dinner?",
+    "solution": "Wine Monkey brings sommelier-level expertise to your pocket or Discord server.",
+    "features": [
+      {
+        "title": "Smart Recommendations",
+        "description": "Get personalized wine suggestions based on your taste profile",
+        "icon": "\ud83c\udf77"
+      },
+      {
+        "title": "Food Pairing Expert",
+        "description": "Perfect wine matches for any meal, instantly",
+        "icon": "\ud83c\udf7d\ufe0f"
+      },
+      {
+        "title": "Virtual Cellar",
+        "description": "Track your collection, know when to drink each bottle",
+        "icon": "\ud83d\udce6"
+      },
+      {
+        "title": "Price Tracking",
+        "description": "Get alerts when your favorite wines go on sale",
+        "icon": "\ud83d\udcb8"
+      }
+    ],
+    "pricing": {
+      "free": {
+        "price": "$0",
+        "features": [
+          "5 recommendations/month",
+          "Basic pairing advice"
+        ]
+      },
+      "premium": {
+        "price": "$4.99/month",
+        "features": [
+          "Unlimited recommendations",
+          "Advanced pairing suggestions",
+          "Cellar tracking (up to 100 bottles)",
+          "Price alerts",
+          "Tasting note templates",
+          "Discord bot integration"
+        ]
+      }
+    },
+    "cta_primary": "Try Free for 7 Days"
+  },
+  "evil_apples_monetization": {
+    "premium_pitch": {
+      "headline": "Unlock Evil Apples Premium",
+      "benefits": [
+        "\ud83c\udfb4 Exclusive card decks updated weekly",
+        "\ud83d\udeab No ads - uninterrupted gameplay",
+        "\ud83d\udc51 Premium badge next to your name",
+        "\ud83c\udfa8 Custom avatar frames & themes",
+        "\u26a1 Early access to new features",
+        "\ud83c\udfc6 Exclusive tournaments with prizes"
+      ],
+      "pricing": {
+        "monthly": "$4.99/month",
+        "annual": "$39.99/year",
+        "savings": "Save 33% - Only $3.33/month!"
+      },
+      "social_proof": "Join 15,000+ Premium members",
+      "cta": "Upgrade to Premium"
+    },
+    "card_pack_pitch": {
+      "headline": "New Card Packs",
+      "examples": [
+        "Dark Humor Pack - $1.99",
+        "Pop Culture 2026 - $2.99",
+        "NSFW Extreme - $2.99",
+        "Classic Gaming - $1.99"
+      ],
+      "bundle": "All Packs Bundle - $9.99 (Save 50%)"
+    }
+  },
+  "email_sequences": {
+    "wellplate_trial": [
+      {
+        "day": 1,
+        "subject": "Welcome to WellPlate! Your first meal plan is ready \ud83e\udd57",
+        "preview": "Let's start your health journey together"
+      },
+      {
+        "day": 3,
+        "subject": "Quick tip: How to use the AI food scanner",
+        "preview": "Stop manual logging forever"
+      },
+      {
+        "day": 5,
+        "subject": "[Expiring Soon] Your premium trial ends in 2 days",
+        "preview": "Lock in your member rate before it's gone"
+      },
+      {
+        "day": 8,
+        "subject": "We miss you! Here's 20% off to come back",
+        "preview": "Exclusive win-back offer inside"
+      }
+    ],
+    "afoodable_trial": [
+      {
+        "day": 1,
+        "subject": "Your waste-saving journey starts now! \ud83c\udf31"
+      },
+      {
+        "day": 4,
+        "subject": "You've already saved $X this week!"
+      },
+      {
+        "day": 7,
+        "subject": "Last chance - Save money or cancel (no hard feelings)"
+      }
+    ]
+  }
+}
