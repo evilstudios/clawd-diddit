@@ -1,0 +1,4 @@
+email,first_name,last_name,company_name,phone,website,industry
+john@example.com,John,Smith,Smith Plumbing,555-0123,smithplumbing.com,Plumbing
+jane@example.com,Jane,Doe,Doe Electric,555-0124,doeelectric.com,Electrical
+mike@example.com,Mike,Johnson,Johnson HVAC,555-0125,johnsonhvac.com,HVAC
