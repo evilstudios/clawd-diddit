@@ -1,7 +1,7 @@
 # USER.md - About Your Human
 
-- **Name:** *(To be filled)*
-- **What to call them:** Boss / Chief
+- **Name:** Mitch
+- **What to call them:** Mitch / Boss (when feeling formal)
 - **Timezone:** *(To be determined from activity patterns)*
 - **Work Style:** Non-stop grind, wake to sleep
 
