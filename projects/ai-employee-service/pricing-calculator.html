@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Employee Pricing Calculator | Vertex AI Ops</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .calculator {
+            padding: 40px;
+        }
+        
+        .form-group {
+            margin-bottom: 30px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 16px;
+        }
+        
+        .form-group select,
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group select:focus,
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .help-text {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .integration-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .integration-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        
+        .integration-item input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        
+        .results {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .results h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .price-breakdown {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .price-row:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            font-size: 20px;
+            padding-top: 15px;
+        }
+        
+        .roi-section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .roi-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .roi-metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+        }
+        
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background: white;
+            color: #667eea;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .note {
+            background: #fffbea;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            color: #333;
+        }
+        
+        .note strong {
+            color: #f59e0b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💼 AI Employee Pricing Calculator</h1>
+            <p>Get a custom quote based on your business needs</p>
+        </div>
+        
+        <div class="calculator">
+            <form id="calculatorForm">
+                <!-- Business Size -->
+                <div class="form-group">
+                    <label for="businessSize">What's your business size?</label>
+                    <select id="businessSize" required>
+                        <option value="">-- Select --</option>
+                        <option value="solo">Solo founder / Solopreneur</option>
+                        <option value="small">Small team (2-10 employees)</option>
+                        <option value="medium">Mid-market (11-50 employees)</option>
+                        <option value="large">Growing company (51-100 employees)</option>
+                        <option value="enterprise">Enterprise (100+ employees)</option>
+                    </select>
+                </div>
+                
+                <!-- Business Type -->
+                <div class="form-group">
+                    <label for="businessType">What type of business?</label>
+                    <select id="businessType" required>
+                        <option value="">-- Select --</option>
+                        <option value="saas">B2B SaaS</option>
+                        <option value="agency">Agency / Consulting</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="realestate">Real Estate</option>
+                        <option value="professional">Professional Services (law, finance, etc.)</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <!-- Time Spent -->
+                <div class="form-group">
+                    <label for="timeSpent">How many hours/week do you spend on busywork?</label>
+                    <input type="number" id="timeSpent" min="1" max="80" placeholder="e.g., 20" required>
+                    <div class="help-text">Email, scheduling, data entry, admin tasks, etc.</div>
+                </div>
+                
+                <!-- Hourly Value -->
+                <div class="form-group">
+                    <label for="hourlyValue">What's your time worth per hour?</label>
+                    <input type="number" id="hourlyValue" min="50" max="1000" placeholder="e.g., 150" required>
+                    <div class="help-text">As a founder/executive, typically $100-250/hour</div>
+                </div>
+                
+                <!-- Integrations -->
+                <div class="form-group">
+                    <label>Which tools do you need integrated?</label>
+                    <div class="help-text" style="margin-bottom: 10px;">Select all that apply (first 5 included, $500 each after)</div>
+                    <div class="integration-list">
+                        <div class="integration-item">
+                            <input type="checkbox" id="int-email" class="integration" value="500">
+                            <label for="int-email">Email (Gmail/Outlook)</label>
+                        </div>
+                        <div class="integration-item">
+                            <input type="checkbox" id="int-calendar" class="integration" value="500">
+                            <label for="int-calendar">Calendar</label>
+                        </div>
+                        <div class="integration-item">
+                            <input type="checkbox" id="int-crm" class="integration" value="500">
+                            <label for="int-crm">CRM (HubSpot/Salesforce)</label>
+                        </div>
+                        <div class="integration-item">
+                            <input type="checkbox" id="int-slack" class="integration" value="500">
+                            <label for="int-slack">Slack / Teams</label>
+                        </div>
+                        <div class="integration-item">
+                            <input type="checkbox" id="int-docs" class="integration" value="500">
+                            <label for="int-docs">Google Drive / Notion</label>
+                        </div>
+                        <div class="integration-item">
+                            <input type="checkbox" id="int-project" class="integration" value="500">
+                            <label for="int-project">Project Management</label>
+                        </div>
+                        <div class="integration-item">
+                            <input type="checkbox" id="int-accounting" class="integration" value="500">
+                            <label for="int-accounting">Accounting Software</label>
+                        </div>
+                        <div class="integration-item">
+                            <input type="checkbox" id="int-analytics" class="integration" value="500">
+                            <label for="int-analytics">Analytics / BI Tools</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Custom Skills -->
+                <div class="form-group">
+                    <label for="customSkills">How many custom skills do you need?</label>
+                    <select id="customSkills">
+                        <option value="0">None (standard features only)</option>
+                        <option value="1">1 custom skill ($1,500)</option>
+                        <option value="2">2 custom skills ($3,000)</option>
+                        <option value="3">3 custom skills ($4,500)</option>
+                        <option value="4">4+ custom skills ($6,000+)</option>
+                    </select>
+                    <div class="help-text">Custom reports, specialized workflows, advanced automation, etc.</div>
+                </div>
+                
+                <!-- Priority Support -->
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="prioritySupport" style="width: auto; margin-right: 10px;">
+                        Add Priority Support (+$500/month)
+                    </label>
+                    <div class="help-text">4-hour response time instead of 24-hour</div>
+                </div>
+            </form>
+            
+            <div id="results" class="results" style="display: none;">
+                <h2>📊 Your Custom Quote</h2>
+                
+                <div class="price-breakdown">
+                    <div class="price-row">
+                        <span>Base Setup Fee</span>
+                        <span id="baseSetup">$5,000</span>
+                    </div>
+                    <div class="price-row">
+                        <span id="extraIntText">Extra Integrations (0)</span>
+                        <span id="extraInt">$0</span>
+                    </div>
+                    <div class="price-row">
+                        <span id="customSkillsText">Custom Skills (0)</span>
+                        <span id="customSkillsCost">$0</span>
+                    </div>
+                    <div class="price-row">
+                        <span><strong>Total Setup Fee (One-Time)</strong></span>
+                        <span id="totalSetup"><strong>$5,000</strong></span>
+                    </div>
+                </div>
+                
+                <div class="price-breakdown">
+                    <div class="price-row">
+                        <span>Base Monthly Fee</span>
+                        <span>$2,000</span>
+                    </div>
+                    <div class="price-row" id="prioritySupportRow" style="display: none;">
+                        <span>Priority Support</span>
+                        <span>+$500</span>
+                    </div>
+                    <div class="price-row">
+                        <span><strong>Total Monthly Fee</strong></span>
+                        <span id="totalMonthly"><strong>$2,000</strong></span>
+                    </div>
+                </div>
+                
+                <div class="roi-section">
+                    <h3>💰 Your ROI</h3>
+                    <div class="roi-metric">
+                        <span>Time Saved Per Week:</span>
+                        <span id="timeSaved"><strong>20 hours</strong></span>
+                    </div>
+                    <div class="roi-metric">
+                        <span>Monthly Value of Time Saved:</span>
+                        <span id="monthlySavings"><strong>$12,000</strong></span>
+                    </div>
+                    <div class="roi-metric">
+                        <span>Monthly ROI:</span>
+                        <span id="roi"><strong>6x</strong></span>
+                    </div>
+                    <div class="roi-metric">
+                        <span>Payback Period:</span>
+                        <span id="payback"><strong>1.5 months</strong></span>
+                    </div>
+                </div>
+                
+                <a href="#" class="cta-button" onclick="bookCall(); return false;">
+                    📞 Book Your Discovery Call
+                </a>
+                
+                <div class="note">
+                    <strong>Note:</strong> This is an estimate based on your inputs. Your actual quote may vary based on complexity and specific requirements. Book a discovery call for a precise quote.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Calculate pricing in real-time
+        function calculatePricing() {
+            const businessSize = document.getElementById('businessSize').value;
+            const timeSpent = parseInt(document.getElementById('timeSpent').value) || 0;
+            const hourlyValue = parseInt(document.getElementById('hourlyValue').value) || 0;
+            const customSkills = parseInt(document.getElementById('customSkills').value) || 0;
+            const prioritySupport = document.getElementById('prioritySupport').checked;
+            
+            // Count selected integrations
+            const integrations = document.querySelectorAll('.integration:checked');
+            const integrationCount = integrations.length;
+            const extraIntegrations = Math.max(0, integrationCount - 5);
+            
+            // Base pricing
+            let setupFee = 5000;
+            let monthlyFee = 2000;
+            
+            // Add extra integrations ($500 each after first 5)
+            const extraIntCost = extraIntegrations * 500;
+            setupFee += extraIntCost;
+            
+            // Add custom skills
+            const customSkillsCost = customSkills * 1500;
+            setupFee += customSkillsCost;
+            
+            // Add priority support
+            if (prioritySupport) {
+                monthlyFee += 500;
+                document.getElementById('prioritySupportRow').style.display = 'flex';
+            } else {
+                document.getElementById('prioritySupportRow').style.display = 'none';
+            }
+            
+            // Calculate ROI
+            const weeklySavings = timeSpent * hourlyValue;
+            const monthlySavings = weeklySavings * 4;
+            const roi = (monthlySavings / monthlyFee).toFixed(1);
+            const paybackMonths = (setupFee / (monthlySavings - monthlyFee)).toFixed(1);
+            
+            // Update UI
+            document.getElementById('baseSetup').textContent = '$5,000';
+            document.getElementById('extraIntText').textContent = `Extra Integrations (${extraIntegrations})`;
+            document.getElementById('extraInt').textContent = `$${extraIntCost.toLocaleString()}`;
+            document.getElementById('customSkillsText').textContent = `Custom Skills (${customSkills})`;
+            document.getElementById('customSkillsCost').textContent = `$${customSkillsCost.toLocaleString()}`;
+            document.getElementById('totalSetup').innerHTML = `<strong>$${setupFee.toLocaleString()}</strong>`;
+            document.getElementById('totalMonthly').innerHTML = `<strong>$${monthlyFee.toLocaleString()}</strong>`;
+            
+            document.getElementById('timeSaved').innerHTML = `<strong>${timeSpent} hours</strong>`;
+            document.getElementById('monthlySavings').innerHTML = `<strong>$${monthlySavings.toLocaleString()}</strong>`;
+            document.getElementById('roi').innerHTML = `<strong>${roi}x</strong>`;
+            document.getElementById('payback').innerHTML = `<strong>${paybackMonths} months</strong>`;
+            
+            // Show results
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        
+        // Attach event listeners
+        document.getElementById('businessSize').addEventListener('change', calculatePricing);
+        document.getElementById('businessType').addEventListener('change', calculatePricing);
+        document.getElementById('timeSpent').addEventListener('input', calculatePricing);
+        document.getElementById('hourlyValue').addEventListener('input', calculatePricing);
+        document.getElementById('customSkills').addEventListener('change', calculatePricing);
+        document.getElementById('prioritySupport').addEventListener('change', calculatePricing);
+        
+        document.querySelectorAll('.integration').forEach(checkbox => {
+            checkbox.addEventListener('change', calculatePricing);
+        });
+        
+        function bookCall() {
+            // Replace with your actual Calendly link
+            window.open('https://calendly.com/your-link', '_blank');
+        }
+    </script>
+</body>
+</html>
