@@ -1,0 +1,240 @@
+openapi: 3.1.0
+info:
+  title: Boxie CSR Assistant API
+  description: AI-powered customer service representative assistant for Zoho Desk
+  version: 1.0.0
+
+servers:
+  - url: https://YOUR-PROJECT.catalyst.zoho.com/baas/v1/functions
+    description: Zoho Catalyst Production
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+
+security:
+  - ApiKeyAuth: []
+
+paths:
+  /searchTickets/execute:
+    post:
+      operationId: searchTickets
+      summary: Search support tickets
+      description: Search Zoho Desk tickets with optional filters for status, priority, assignee, and department
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  description: Ticket status (e.g., Open, Pending, Closed)
+                  enum: [Open, Pending, On Hold, Closed]
+                priority:
+                  type: string
+                  description: Ticket priority level
+                  enum: [Low, Medium, High, Urgent]
+                assignee:
+                  type: string
+                  description: Assignee ID to filter by
+                department:
+                  type: string
+                  description: Department ID to filter by
+                limit:
+                  type: integer
+                  description: Maximum number of tickets to return
+                  default: 50
+                  minimum: 1
+                  maximum: 100
+      responses:
+        '200':
+          description: Successful search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  count:
+                    type: integer
+                  tickets:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        subject:
+                          type: string
+                        status:
+                          type: string
+                        priority:
+                          type: string
+                        customer:
+                          type: string
+                        createdTime:
+                          type: string
+                        assignee:
+                          type: string
+
+  /getTicketDetails/execute:
+    post:
+      operationId: getTicketDetails
+      summary: Get ticket details
+      description: Retrieve complete information about a specific ticket including conversation history
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - ticketId
+              properties:
+                ticketId:
+                  type: string
+                  description: The ticket number or ID
+      responses:
+        '200':
+          description: Ticket details retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  ticket:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      subject:
+                        type: string
+                      description:
+                        type: string
+                      status:
+                        type: string
+                      priority:
+                        type: string
+                      customer:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          email:
+                            type: string
+                      assignee:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          email:
+                            type: string
+                      conversation:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            from:
+                              type: string
+                            content:
+                              type: string
+                            timestamp:
+                              type: string
+                            direction:
+                              type: string
+
+  /ragSearch/execute:
+    post:
+      operationId: ragSearch
+      summary: Search knowledge base
+      description: Semantic search across company knowledge base (SOPs, policies, documentation)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - query
+              properties:
+                query:
+                  type: string
+                  description: Search query or question
+                limit:
+                  type: integer
+                  description: Maximum number of results
+                  default: 5
+                  minimum: 1
+                  maximum: 10
+      responses:
+        '200':
+          description: Knowledge base search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  query:
+                    type: string
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        title:
+                          type: string
+                        content:
+                          type: string
+                        relevance:
+                          type: number
+                        source:
+                          type: string
+
+  /generateResponse/execute:
+    post:
+      operationId: generateResponse
+      summary: Generate response draft
+      description: Generate an AI-powered response draft for a ticket using context from ticket history and knowledge base
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - ticketId
+              properties:
+                ticketId:
+                  type: string
+                  description: The ticket number or ID to generate a response for
+      responses:
+        '200':
+          description: Response draft generated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  ticketId:
+                    type: string
+                  draft:
+                    type: string
+                  context:
+                    type: object
+                    properties:
+                      hasRagContext:
+                        type: boolean
+                      hasSimilarTickets:
+                        type: boolean
