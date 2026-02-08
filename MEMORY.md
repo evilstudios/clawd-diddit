@@ -28,9 +28,35 @@ Act as full-time employee:
 - Proactive overnight work
 - All changes via PR for review
 
-## Next Actions Identified
-- Research each product thoroughly
-- Analyze current traffic/metrics
-- Identify revenue bottlenecks
-- Build automation and growth tools
-- Create sales/marketing assets
+## Key Learnings (Updated Feb 2026)
+
+### What Works
+- **Zendesk as product feedback goldmine** - Customer tickets revealed P0 bugs (login/purchases)
+- **Manual lead building beats automation for high-touch B2B** - LYLYS research showed personal touch matters
+- **YouTube API for creator research** - Found perfect-fit podcast targets in 30 min
+- **Instantly.ai for cold email** - Reliable, good API, scales well
+
+### Critical Issues Discovered
+**Evil Apples:**
+- Login system broken (Game Center integration) - 40% of support tickets
+- Purchase flow losing customer money - 15% of tickets
+- Facebook page dormant (9.5k followers, 0% engagement)
+- Need to fix product before scaling marketing
+
+### Tools Built This Week
+- Instantly V2 API wrapper (production-ready)
+- Google Maps scraper (restaurant leads)
+- Email finder tool (10% → 60% coverage)
+- Boxie Bot CSR mock (demo-ready)
+- Zendesk automation (bulk ticket management)
+
+### Active Campaigns
+- **Voxable:** Cold email running (check results Sun 7pm)
+- **Afoodable Philadelphia:** 50 leads to build Sunday
+- **LYLYS:** Top 3 podcast targets identified, ready for outreach
+
+## API Integrations Configured
+- ✅ Instantly.ai (cold email)
+- ✅ YouTube Data API (creator research)
+- ✅ Zendesk (customer support)
+- ✅ Facebook Graph API (read-only, needs posting permission)
