@@ -1,0 +1,218 @@
+=== Ticket #257396 ===
+What went wrong: a swordfish
+What was happening: Logging in via Game Center legacy method
+What caused this: Login Failed: No user found. - Error
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+DO NOT EDIT BELOW THIS LINE
+
+Robot Food: Unknown User|5.6.13 (1)|ios 18.7.2|Apple - iPhone (unknown) on --|A34C22B2-CC3C-4BF4-92C1-94C138447755|
+PS:9572996474.73|eyJzY29yZSI6Ijk1NzI5OTY0NzQuNzMiLCJhcGlMZXZlbCI6LTEsImZyZWVEaXNrU3BhY2UiOjEyMDcxMzc0ODQ4LCJkaXNrQ2FwYWNpdHkiOjEyNzg2Njc4NTc5Miwic3VwcG9ydHM2N
+
+=== Ticket #257394 ===
+What went wrong: a series of tubes
+What was happening: Uploading a new avatar image
+What caused this: Failed to load configuration for image upload - blame: a series of tubes - Error
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+DO NOT EDIT BELOW THIS LINE
+
+Robot Food: 69878bf4d1f9b80f14c3894c|5.6.13 (1)|ios 26.2|Apple - iPhone 12 (unknown) on --|3A33BCFD-3935-48D5-A664-CE40B0CA8886|
+PS:3380700375.85|eyJzY29yZSI6IjMzODA3MDAzNzUuODUiLCJhcGlMZXZlbCI6LTEsImZyZWVEaXNrU3BhY2UiOjU4OTAzODUxMDA4LC
+
+=== Ticket #257393 ===
+What went wrong: a swordfish
+What was happening: Logging in via Game Center legacy method
+What caused this: Login Failed: No user found. - Error
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+DO NOT EDIT BELOW THIS LINE
+
+Robot Food: Unknown User|5.6.13 (1)|ios 26.2|Apple - iPhone 11 (unknown) on --|C9D9802C-2EB6-486E-B8F5-A93691BFD811|
+PS:2870964182.45|eyJzY29yZSI6IjI4NzA5NjQxODIuNDUiLCJhcGlMZXZlbCI6LTEsImZyZWVEaXNrU3BhY2UiOjEyMDU1NTg4ODY0LCJkaXNrQ2FwYWNpdHkiOjYzOTMzODk0NjU2LCJzdXBwb3J0czY0
+
+=== Ticket #257392 ===
+When we go to purchase decks...it takes our cake/coins but it won't let us select a deck so we lose those coins/cake?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+DO NOT EDIT BELOW THIS LINE
+
+Robot Food: 5977ad1eee72c30fe39e94b2|5.7.15 (23552)|android 16|samsung - SM-S911U (dm1qsqw) on T-Mobile|549e75d3fb34b71b|
+PS:40.39|eyJzY29yZSI6IjQwLjM5IiwiYXBpTGV2ZWwiOjM2LCJmcmVlRGlza1NwYWNlIjo5ODg0NzAwNjcyLCJkaXNrQ2FwYWNpdHkiOjExODk5NTEyODMyMCwic3VwcG9ydHM2NEJpdCI6dHJ1ZSwibWF4TWVtb3J5IjoyNjg0MzU
+
+=== Ticket #257391 ===
+What went wrong: a small box
+What was happening: Accepting invitation from friends tab
+What caused this: You must be logged in! - Error
+
+
+
+Hi.
+My game won't load.
+Also...it says I must log in ,but I am logged in.
+
+The app is up to date 
+ 
+
+
+
+
+
+
+
+________________________________________
+DO NOT EDIT BELOW THIS LINE
+
+Robot Food: 5928e842133ec37ecf5ed55e|5.7.15 (23552)|android 16|google - Pixel 7 Pro (cheetah) on TELUS|0f1e4efcfd134d8a|
+PS:41.10|eyJzY29yZSI6IjQxLjEwIiwiYXBpTGV2ZWwiOjM2LCJmcmVlRGlza1
+
+=== Ticket #257390 ===
+What went wrong: a happy hedgehog
+What was happening: Attempting to redeem free cake
+What caused this: You must be logged in! - Error
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+DO NOT EDIT BELOW THIS LINE
+
+Robot Food: 67294a487faff00f29372c12|5.6.13 (1)|ios 18.5|Apple - iPhone (unknown) on --|9B6037FC-F082-48B8-9632-0BA0D27B4EC8|
+PS:10609978413.03|eyJzY29yZSI6IjEwNjA5OTc4NDEzLjAzIiwiYXBpTGV2ZWwiOi0xLCJmcmVlRGlza1NwYWNlIjoxMDcyNTkwODQ4LCJkaXNrQ2FwYWNpdHkiOjEyNzUxNTQ4ODI1Niwic3VwcG9ydHM2N
+
+=== Ticket #257389 ===
+Can’t seem to log into my old account. I can’t even type in my username, it gives me an error when I click on the text box at all. 
+
+What went wrong: a swordfish
+What was happening: Logging in via Game Center legacy method
+What caused this: Login Failed: No user found. - Error
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+DO NOT EDIT BELOW THIS LINE
+
+Robot Food: Unknown User|5.6.13 (1)|ios 26.2.1|Apple - iPhone (unknown) on --|7EE06895-7139-4722-AFCC-680C042DF2FB|
+PS:6367691518.08|eyJzY29y
+
+=== Ticket #257384 ===
+What went wrong: a small box
+What was happening: Accepting invitation from friends tab
+What caused this: You must be logged in! - Error
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+DO NOT EDIT BELOW THIS LINE
+
+Robot Food: 6746a53daa62060f017fafcc|5.4.0 (22410)|android 16|samsung - SM-S921W (e1qcsx) on Fido|dbc67d5bae008c88|
+PS:27.31|eyJzY29yZSI6IjI3LjMxIiwiYXBpTGV2ZWwiOjM2LCJmcmVlRGlza1NwYWNlIjoyNjI5Njg2MDY3MiwiZGlza0NhcGFjaXR5IjoxMTg2MTkxNzI4NjQsInN1cHBvcnRzNjRCaXQiOnRydWUsIm1heE1lbW9yeS
+
+=== Ticket #257383 ===
+What went wrong: a small box
+What was happening: Accepting invitation from friends tab
+What caused this: You must be logged in! - Error
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+DO NOT EDIT BELOW THIS LINE
+
+Robot Food: 6739a5118b969e0f0b87be5a|5.6.13 (1)|ios 26.2.1|Apple - iPhone (unknown) on --|101F3896-0EE5-4605-8734-8C8F63CADD28|
+PS:3957299142.21|eyJzY29yZSI6IjM5NTcyOTkxNDIuMjEiLCJhcGlMZXZlbCI6LTEsImZyZWVEaXNrU3BhY2UiOjEzMDU0Njg5MjgwLCJkaXNrQ2FwYWNpdHkiOjEyNzg1ODM5NzE4NCwic3VwcG9ydH
+
+=== Ticket #257382 ===
+What went wrong: a small box
+What was happening: Accepting invitation from friends tab
+What caused this: You must be logged in! - Error
+
+
+
+
+
+
+
+
+
+
+
+________________________________________
+DO NOT EDIT BELOW THIS LINE
+
+Robot Food: 6739a5118b969e0f0b87be5a|5.6.13 (1)|ios 26.2.1|Apple - iPhone (unknown) on --|101F3896-0EE5-4605-8734-8C8F63CADD28|
+PS:5198840121.56|eyJzY29yZSI6IjUxOTg4NDAxMjEuNTYiLCJhcGlMZXZlbCI6LTEsImZyZWVEaXNrU3BhY2UiOjEzMDg4OTMxODQwLCJkaXNrQ2FwYWNpdHkiOjEyNzg1ODM5NzE4NCwic3VwcG9ydH
+
