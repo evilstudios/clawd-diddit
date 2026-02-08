@@ -1,8 +1,10 @@
 # LoveYouLoveYourShow.com (LYLYS)
 
-**Mission:** Scale to $5,000 MRR by Summer 2026
+**Mission:** Scale to $5,000 MRR by Summer 2026 → $25K+ MRR by Year 2
 
 **Business Model:** Loyalty-as-a-Service for mid-tier creators (10k-100k subs)
+
+📄 **[Scaling Strategy to $25K+](./SCALING-STRATEGY.md)** - Automated audits, niche domination, free-to-pro flywheel
 
 ---
 
