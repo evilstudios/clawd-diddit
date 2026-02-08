@@ -5,6 +5,7 @@
 ### Every Heartbeat:
 - Check if any new files/PRs need attention
 - Look for opportunities to build something useful
+- **Facebook Auto-Post** (Mon 2pm EST / Wed 6pm EST / Fri 8pm EST): Run facebook-auto-poster.py
 
 ### Monday/Thursday:
 - Review business metrics (when APIs connected)
