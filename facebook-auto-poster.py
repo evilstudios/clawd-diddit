@@ -9,7 +9,7 @@ import random
 from datetime import datetime
 
 # Facebook credentials
-ACCESS_TOKEN = "EAARWzoIjLNMBQu52ANJPjcDAIDbuzfEx2lNgXKlH1WmBlfNPpd5B1krqv9qEaYNCiPMajYjl6ZC0vQEghWXsNoxW78awlYrUzQ0KLfHlAtQOunlZB7lMx1IjHwdqtGO2u0QyHxxqKJ98klz6EHvmT5lD53fx6X0AnTNOoMCiFiWp1NnGrTbqUF9PHgtlAy4jr2pQ0J1ZAymqxkB3QhOKQKbynjyZCHYNxgzgwyU6PI6j9zP4LiaJ4l1ZAoKugrPcAM5CE48zR4QPByZCYo32upbeNwg9XvokwZDm"
+ACCESS_TOKEN = "EAARWzoIjLNMBQkwARGHZA8ZAcfxiThpJYMswdyuI5msYnYmueqoqaZB1GiR9IiKkZBHpZAuztZBH1EwHMcHR7ZBMJvZCMKUVZCav9xGYk3LuK8TBlqCT7iI6egC8lZAZBbg3ItolYazOSlbwaglV55BejtwRm7uDNuZAIWO1UJnbBGaAl99TVkb0AHZCeoeZAxSmfWpcjkbNfLl3vAzst3MIregvFf"
 PAGE_ID = "127527677435319"
 
 # Prompt cards
@@ -164,15 +164,12 @@ Download Evil Apples:
 
 def post_to_facebook(message):
     """Post message to Facebook page"""
-    page_token = get_page_token()
-    if not page_token:
-        return {"success": False, "error": "Could not get page token"}
-    
+    # ACCESS_TOKEN is already the page token
     response = requests.post(
         f"https://graph.facebook.com/v19.0/{PAGE_ID}/feed",
         data={
             "message": message,
-            "access_token": page_token
+            "access_token": ACCESS_TOKEN
         }
     )
     
