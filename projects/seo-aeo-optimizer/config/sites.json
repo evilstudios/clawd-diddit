@@ -1,0 +1,40 @@
+{
+  "sites": [
+    {
+      "name": "WellPlate AI",
+      "url": "https://wellplate.ai",
+      "business": "Meal planning for dialysis patients",
+      "priority": "high"
+    },
+    {
+      "name": "Afoodable",
+      "url": "https://afoodable.ai",
+      "business": "Food waste solutions for restaurants",
+      "priority": "high"
+    },
+    {
+      "name": "Voxable",
+      "url": "https://app.voxable.ai",
+      "business": "AI receptionist for service businesses",
+      "priority": "high"
+    },
+    {
+      "name": "Evil Apples",
+      "url": "https://evilapples.com",
+      "business": "Card game app",
+      "priority": "medium"
+    },
+    {
+      "name": "Molt Foundry",
+      "url": "https://moltfoundry.io",
+      "business": "Development/consulting",
+      "priority": "medium"
+    },
+    {
+      "name": "Wine Monkey",
+      "url": "https://winemonkey.bot",
+      "business": "Wine recommendations",
+      "priority": "medium"
+    }
+  ]
+}
