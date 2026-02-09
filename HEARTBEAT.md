@@ -9,6 +9,7 @@
 
 ### Monday/Thursday:
 - Review business metrics (when APIs connected)
+- **Check Evil Apples revenue** (`python3 projects/evil-apples/applovin-revenue-monitor.py`)
 - Check for any alerts or anomalies
 - Suggest optimizations
 
