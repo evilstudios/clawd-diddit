@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madeline Ruiz - Celebrity Stylist</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: white;
+        }
+        
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #000;
+        }
+        
+        .header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        
+        .header .subtitle {
+            font-size: 14px;
+            color: #555;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        
+        .header .tagline {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            margin-top: 8px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #000;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .subsection {
+            margin-bottom: 12px;
+        }
+        
+        .subsection h3 {
+            font-size: 13px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .client-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .client-list li {
+            font-size: 12px;
+            margin-bottom: 4px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .client-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #000;
+        }
+        
+        .client-list li strong {
+            font-weight: 700;
+            color: #000;
+        }
+        
+        .why-box {
+            background: #f8f8f8;
+            border-left: 4px solid #000;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .why-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .why-box li {
+            font-size: 11px;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .why-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #000;
+            font-size: 14px;
+        }
+        
+        .why-box li strong {
+            font-weight: 700;
+            color: #000;
+        }
+        
+        .contact-box {
+            background: #000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .contact-box h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .contact-info {
+            font-size: 11px;
+            line-height: 1.8;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .testimonial {
+            font-style: italic;
+            font-size: 11px;
+            color: #555;
+            padding: 10px 20px;
+            border-left: 3px solid #ddd;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        .collaboration-interests {
+            background: #fafafa;
+            padding: 12px;
+            margin-top: 10px;
+        }
+        
+        .collaboration-interests ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+        }
+        
+        .collaboration-interests li {
+            font-size: 11px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .collaboration-interests li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .page {
+                margin: 0;
+                padding: 15mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>MADELINE RUIZ</h1>
+            <div class="subtitle">Celebrity Stylist • Fashion Editor • Icon Collaborator</div>
+            <div class="tagline">45+ Years Styling Legends & Empowering Confidence</div>
+        </div>
+
+        <!-- STYLED THE ICONS -->
+        <div class="section">
+            <div class="section-title">Styled The Icons</div>
+            <div class="two-column">
+                <div class="subsection">
+                    <h3>Music Legends</h3>
+                    <ul class="client-list">
+                        <li><strong>Diana Ross</strong> - Personal styling & wardrobe consultation</li>
+                        <li><strong>Melba Moore</strong> - Image development & styling</li>
+                        <li><strong>Fania All Stars</strong> - Latin music pioneers</li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h3>Fashion Icons</h3>
+                    <ul class="client-list">
+                        <li><strong>Jerry Hall</strong> - Early collaboration at Gucci NYC</li>
+                        <li><strong>Iris Apfel</strong> - Style icon partnership</li>
+                        <li><strong>Beverly Johnson</strong> - First Black supermodel</li>
+                        <li><strong>Karen Alexander</strong> - Supermodel editorial styling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- EDITORIAL LEADERSHIP -->
+        <div class="section">
+            <div class="section-title">Editorial Leadership</div>
+            <div class="two-column">
+                <div class="subsection">
+                    <h3>Publications</h3>
+                    <ul class="client-list">
+                        <li><strong>Cosmopolitan</strong> - Contributing editor</li>
+                        <li><strong>Essence Magazine</strong> - Fashion features</li>
+                        <li><strong>Más Magazine (Univision)</strong> - Latin market editor</li>
+                        <li><strong>NY Daily News</strong> - Style journalism</li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h3>Luxury Experience</h3>
+                    <ul class="client-list">
+                        <li><strong>Gucci NYC</strong> - Flagship stylist</li>
+                        <li><strong>Norma Kamali</strong> - Couture department</li>
+                        <li><strong>Nordstrom, Neiman Marcus, Saks</strong></li>
+                        <li><strong>Bloomingdale's</strong> - Elite personal shopper</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- WHY MADELINE FOR BAD BUNNY -->
+        <div class="section">
+            <div class="section-title">Why Madeline for Bad Bunny</div>
+            <div class="why-box">
+                <ul>
+                    <li><strong>Experience with music legends</strong> - Understands artist lifestyle, tour demands, public image needs</li>
+                    <li><strong>Latin music heritage</strong> - Styled Fania All Stars, editorial work with Univision/Más Magazine, deep cultural understanding</li>
+                    <li><strong>Editorial vision</strong> - Fashion editor background means she sees beyond clothes to storytelling and brand identity</li>
+                    <li><strong>Luxury brand relationships</strong> - 45 years of connections at Gucci, Norma Kamali, major fashion houses</li>
+                    <li><strong>Cross-generational appeal</strong> - Styled icons from Diana Ross to emerging influencers, bridges timeless elegance with modern edge</li>
+                    <li><strong>Proven transformation ability</strong> - Known for helping clients "step into their best selves" through empowering style</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- COLLABORATION INTEREST -->
+        <div class="section">
+            <div class="section-title">Collaboration Interest</div>
+            <div class="collaboration-interests">
+                <ul>
+                    <li>Tour styling & wardrobe</li>
+                    <li>Music video looks</li>
+                    <li>Award show appearances</li>
+                    <li>Editorial shoots</li>
+                    <li>Brand campaign styling</li>
+                    <li>Personal wardrobe curation</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <div class="section">
+            <div class="testimonial">
+                "To her, style is not just about fashion—it is about energy, identity, and presence. It is about telling a story without speaking a word."
+            </div>
+            <div class="testimonial">
+                "Madeline's strength lies in her ability to highlight individuality. She doesn't just choose clothing that flatters; she creates looks that communicate."
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="contact-box">
+            <h3>CONTACT</h3>
+            <div class="contact-info">
+                📸 Instagram: <a href="https://www.instagram.com/imagexray/">@imagexray</a><br>
+                🌐 Profile: <a href="https://showcasemyart.com/madeline-ruiz-styling-legends-empowering-confidence/">showcasemyart.com/madeline-ruiz</a><br>
+                📧 For booking inquiries: Contact through Instagram or representative
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
