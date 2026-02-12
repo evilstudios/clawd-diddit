@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitch Mermagen - Strategic Execution Architect</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: white;
+        }
+        
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #000;
+        }
+        
+        .header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        
+        .header .subtitle {
+            font-size: 14px;
+            color: #555;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        
+        .header .tagline {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            margin-top: 8px;
+        }
+        
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #000;
+            margin-bottom: 8px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .highlight-box {
+            background: #f8f8f8;
+            border-left: 4px solid #000;
+            padding: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .highlight-box p {
+            font-size: 11px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .highlight-box strong {
+            color: #000;
+        }
+        
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .result-card {
+            background: #fafafa;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .result-card .number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 4px;
+        }
+        
+        .result-card .label {
+            font-size: 9px;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .project-card {
+            background: #fafafa;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-left: 3px solid #000;
+        }
+        
+        .project-card h4 {
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #000;
+        }
+        
+        .project-card p {
+            font-size: 9px;
+            line-height: 1.5;
+            color: #555;
+        }
+        
+        .project-card .outcome {
+            font-size: 10px;
+            font-weight: 600;
+            color: #000;
+            margin-top: 4px;
+        }
+        
+        .services-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .services-list li {
+            font-size: 11px;
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .services-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #000;
+        }
+        
+        .services-list li strong {
+            font-weight: 700;
+            color: #000;
+        }
+        
+        .contact-box {
+            background: #000;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .contact-box h3 {
+            font-size: 14px;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+        
+        .contact-info {
+            font-size: 10px;
+            line-height: 1.8;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+            font-size: 9px;
+            color: #555;
+        }
+        
+        .skills-grid div {
+            background: #fafafa;
+            padding: 6px;
+            text-align: center;
+            border-radius: 2px;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .page {
+                margin: 0;
+                padding: 15mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>MITCH MERMAGEN</h1>
+            <div class="subtitle">Strategic Execution Architect • Technology Transformation Executive</div>
+            <div class="tagline">16+ Years Turning Vision Into Reality</div>
+        </div>
+
+        <!-- WHAT I DO -->
+        <div class="section">
+            <div class="highlight-box">
+                <p><strong>I don't just advise—I execute.</strong> I transform ambitious visions into operational reality. Most consultants give you a deck and disappear. I roll up my sleeves, build working systems, train your teams, and leave you with infrastructure that scales.</p>
+            </div>
+        </div>
+
+        <!-- PROVEN RESULTS -->
+        <div class="section">
+            <div class="section-title">Proven Results</div>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="number">$1.5M</div>
+                    <div class="label">Saved at Capital One</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">40%</div>
+                    <div class="label">Productivity Improvement</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">95%</div>
+                    <div class="label">Project Success Rate</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">30%</div>
+                    <div class="label">Faster Release Cycles</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">50+</div>
+                    <div class="label">People Led & Transformed</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">12</div>
+                    <div class="label">Agile Teams Scaled</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECENT TRANSFORMATIONS -->
+        <div class="section">
+            <div class="section-title">Recent Transformations (2026)</div>
+            <div class="two-column">
+                <div>
+                    <div class="project-card">
+                        <h4>Voxable AI Launch (30 days)</h4>
+                        <p>Built AI voice service from zero to live campaign: 230 qualified leads, complete outreach system, automated infrastructure</p>
+                        <div class="outcome">✓ First revenue within 24 hours</div>
+                    </div>
+                    <div class="project-card">
+                        <h4>Twitter Automation (1 day)</h4>
+                        <p>12 Python scripts, 1,548+ tweets, 4x daily posting, $25 cost for 34 years runtime</p>
+                        <div class="outcome">✓ Production system in hours</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="project-card">
+                        <h4>Creator Platform MVP (1 day)</h4>
+                        <p>Complete 3-page site, fan audit tool, design system, API-ready architecture</p>
+                        <div class="outcome">✓ Deployable MVP from concept</div>
+                    </div>
+                    <div class="project-card">
+                        <h4>Infrastructure Migration (2 days)</h4>
+                        <p>240K subscriber migration plan, custom system, production-ready architecture</p>
+                        <div class="outcome">✓ $36K/year savings identified</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE OFFERINGS -->
+        <div class="section">
+            <div class="section-title">90-Day Transformation Engagements</div>
+            <ul class="services-list">
+                <li><strong>Tech Velocity Unlock ($75K-100K)</strong> - Audit pipelines, implement CI/CD, train teams. Outcome: 30%+ faster releases</li>
+                <li><strong>Strategic Execution Sprint ($100K-150K)</strong> - Translate vision to roadmap, build delivery teams, establish OKRs. Outcome: Momentum in 90 days</li>
+                <li><strong>Operational Scale-Up ($75K-125K)</strong> - Document processes, build PM infrastructure, capacity planning. Outcome: Scale without chaos</li>
+                <li><strong>Rapid MVP Build ($50K-75K)</strong> - Technical architecture, MVP development, launch infrastructure. Outcome: Deployable product in 30-45 days</li>
+            </ul>
+        </div>
+
+        <!-- EXPERTISE -->
+        <div class="section">
+            <div class="section-title">Technology Expertise</div>
+            <div class="skills-grid">
+                <div>AWS • Kubernetes • Terraform</div>
+                <div>Jenkins • GitHub Actions</div>
+                <div>Python • Node.js • React</div>
+                <div>Jira • Linear • Scrum • SAFe</div>
+                <div>OpenAI • Anthropic • LangChain</div>
+                <div>Chef • Ansible • Docker</div>
+            </div>
+        </div>
+
+        <!-- BACKGROUND -->
+        <div class="section">
+            <div class="section-title">Background</div>
+            <div class="two-column">
+                <div>
+                    <p style="font-size: 10px; margin-bottom: 6px;"><strong>Capital One (8+ years)</strong></p>
+                    <p style="font-size: 9px; color: #555; margin-bottom: 10px;">Led 12 Agile teams (50+ people), saved $1.5M through automation, built CI/CD serving thousands of engineers, reduced release cycles 30%</p>
+                    
+                    <p style="font-size: 10px; margin-bottom: 6px;"><strong>JPMorgan Chase (4+ years)</strong></p>
+                    <p style="font-size: 9px; color: #555;">Led platform migrations, built TCO models, managed cross-functional delivery teams</p>
+                </div>
+                <div>
+                    <p style="font-size: 10px; margin-bottom: 6px;"><strong>Super Massive Ventures (President)</strong></p>
+                    <p style="font-size: 9px; color: #555; margin-bottom: 10px;">Technology holding company: 40% efficiency boost, 95% project success rate, acquisitions & AI/ML focus</p>
+                    
+                    <p style="font-size: 10px; margin-bottom: 6px;"><strong>Evil Studios (CEO)</strong></p>
+                    <p style="font-size: 9px; color: #555;">Gaming company managing 4 SaaS products, 3 service businesses</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IDEAL CLIENT -->
+        <div class="section">
+            <div class="section-title">Who I Work With</div>
+            <p style="font-size: 10px; margin-bottom: 8px;"><strong>Growth-stage companies ($5M-$50M ARR) • PE-backed firms • Fortune 500 innovation teams • Serial entrepreneurs</strong></p>
+            <p style="font-size: 9px; color: #555;">Companies struggling with: slow delivery, strategy/execution gaps, scaling chaos, competing priorities, technical bottlenecks</p>
+        </div>
+
+        <!-- ROI -->
+        <div class="section">
+            <div class="section-title">Expected ROI</div>
+            <div class="highlight-box">
+                <p><strong>30%+ faster delivery</strong> • <strong>$500K-$2M+ cost savings</strong> • <strong>40%+ productivity improvement</strong> • <strong>Reduced technical debt</strong> • <strong>Scalable infrastructure</strong></p>
+                <p style="margin-top: 8px;">Typical payback period: <strong>6-12 months</strong></p>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="contact-box">
+            <h3>LET'S TRANSFORM YOUR BUSINESS</h3>
+            <div class="contact-info">
+                📧 [Your Email] | 💼 LinkedIn: [Your URL] | 📱 [Your Phone]<br>
+                🌐 Super Massive Ventures | Available for 2 concurrent clients
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
