@@ -9,13 +9,14 @@
 ## Madeline's Credentials (Selling Points)
 
 ### Icon Portfolio
+- **Willie Colón** - Salsa legend (featured on Bad Bunny's "Nuevayol")
 - **Diana Ross** - Personal shopping & styling
+- **Fania All Stars** - Latin music pioneers
 - **Jerry Hall** - Early career at Gucci NYC
 - **Iris Apfel** - Style icon collaboration
 - **Beverly Johnson** - First Black supermodel
 - **Karen Alexander** - Supermodel styling
 - **Melba Moore** - Music legend
-- **Fania All Stars** - Latin music pioneers
 
 ### Professional Background
 - **45+ years** in fashion & styling
@@ -25,8 +26,9 @@
 - **Fashion houses**: Norma Kamali couture department
 
 ### Unique Value for Bad Bunny
+✅ **Direct connection to Bad Bunny's influences** - Styled Willie Colón, who's featured on "Nuevayol" from *Nadie Sabe Lo Que Va a Pasar Mañana*  
 ✅ **Experience with music legends** (understands artist needs)  
-✅ **Latin music heritage** (Fania All Stars, Univision/Más Magazine)  
+✅ **Latin music heritage** (Willie Colón, Fania All Stars, Univision/Más Magazine)  
 ✅ **Editorial vision** (fashion editor background)  
 ✅ **Luxury brand relationships** (40+ years of connections)  
 ✅ **Cross-generational appeal** (styled icons across decades)  
@@ -45,7 +47,7 @@
   - LinkedIn (Rimas team members)
   - Industry referrals
 
-**Pitch Angle**: "Legendary stylist who dressed Diana Ross, Jerry Hall, and Latin music pioneers seeking to collaborate with next-generation icon"
+**Pitch Angle**: "Legendary stylist who dressed Willie Colón (featured on 'Nuevayol'), Diana Ross, and Latin music pioneers seeking to collaborate with next-generation icon"
 
 ### Secondary Routes
 

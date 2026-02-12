@@ -8,9 +8,10 @@
 ## STYLED THE ICONS
 
 ### Music Legends
+- **Willie Colón** - Salsa icon (featured on Bad Bunny's "Nuevayol")
 - **Diana Ross** - Personal styling & wardrobe consultation
-- **Melba Moore** - Image development & styling
 - **Fania All Stars** - Latin music pioneers (styling collective)
+- **Melba Moore** - Image development & styling
 
 ### Fashion Icons
 - **Jerry Hall** - Early collaboration at Gucci NYC
@@ -48,7 +49,9 @@
 
 ✅ **Experience with music legends** - Understands artist lifestyle, tour demands, public image needs
 
-✅ **Latin music heritage** - Styled Fania All Stars, editorial work with Univision/Más Magazine, deep cultural understanding
+✅ **Direct connection to Bad Bunny's influences** - Styled Willie Colón, who's featured on "Nuevayol" from *Nadie Sabe Lo Que Va a Pasar Mañana*
+
+✅ **Latin music heritage** - Styled Willie Colón, Fania All Stars, editorial work with Univision/Más Magazine, deep cultural understanding
 
 ✅ **Editorial vision** - Fashion editor background means she sees beyond clothes to storytelling, brand identity, visual narrative
 
