@@ -26,7 +26,11 @@
 - **Fashion houses**: Norma Kamali couture department
 
 ### Unique Value for Bad Bunny
+
+**Aesthetic Alignment**: Madeline's signature style is retro, romantic, and Spanish-influenced — a natural fit for Bad Bunny's visual identity. She was deeply moved by his Super Bowl Halftime performance, recognizing the cultural storytelling and artistic boldness.
+
 ✅ **Direct connection to Bad Bunny's influences** - Styled Willie Colón, who's featured on "Nuevayol" from *Nadie Sabe Lo Que Va a Pasar Mañana*  
+✅ **Signature aesthetic resonance** - Retro, romantic, Spanish-influenced style aligns with Bad Bunny's visual narrative and cultural pride  
 ✅ **Experience with music legends** (understands artist needs)  
 ✅ **Latin music heritage** (Willie Colón, Fania All Stars, Univision/Más Magazine)  
 ✅ **Editorial vision** (fashion editor background)  
