@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Digital Warmth Palette */
+  --primary: #FF4B5C;        /* Heartbeat Red */
+  --secondary: #FFB347;      /* Broadcast Amber */
+  --accent: #00CEC9;         /* Connection Teal */
+  --neutral: #2D3436;        /* Studio Slate */
+  --bg-light: #F9F9F9;       /* Paper White */
+  
+  /* Spacing Scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--neutral);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-semibold
+           shadow-md hover:shadow-lg hover:-translate-y-0.5 
+           transition-all duration-200 ease-in-out;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-semibold
+           shadow-md hover:shadow-lg hover:-translate-y-0.5
+           transition-all duration-200 ease-in-out;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl p-6 shadow-md hover:shadow-lg
+           transition-shadow duration-200;
+  }
+  
+  .creator-spotlight {
+    @apply shadow-glow border-2 border-secondary rounded-xl;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "tweets": [
+    {
+      "text": "What's the most useful automation you've built recently? Drop it below! \ud83e\udd16\ud83d\udc47",
+      "tweet_id": "2021445296526368908",
+      "posted_at": "2026-02-11T04:44:50.117014",
+      "hour": 4,
+      "type": "standard",
+      "category": "engagement"
+    },
+    {
+      "text": "Most people go to Vegas for the gambling, but I go for the __________.\n\nA) a cloud-based porn collection\nB) dropping a deuce in a motorcoach bathroom\n\n\ud83e\udd14 Which is funnier? Vote below!\n\n\ud83d\ude08 Play Evil Apples: evilapples.com",
+      "tweet_id": "2021445462465642783",
+      "posted_at": "2026-02-11T04:45:29.701405",
+      "hour": 4,
+      "type": "evil_apples_combo",
+      "combo": {
+        "prompt": "Most people go to Vegas for the gambling, but I go for the __________.",
+        "answer_a": "a cloud-based porn collection",
+        "answer_b": "dropping a deuce in a motorcoach bathroom"
+      }
+    }
+  ],
+  "ab_tests": {}
+}
