@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxable AI - Never Miss Another Lead Again</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .stat {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffd93d;
+            margin-top: 30px;
+        }
+        
+        .problem {
+            background: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .problem h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #d63031;
+        }
+        
+        .pain-points {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .pain-point {
+            background: #ffe5e5;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid #d63031;
+            border-radius: 5px;
+        }
+        
+        .pain-point strong {
+            color: #d63031;
+            font-size: 1.1rem;
+        }
+        
+        .solution {
+            background: #f8f9fa;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .solution h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .solution .intro {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            color: #555;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .social-proof {
+            background: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .social-proof h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+        
+        .testimonials {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 4px solid #667eea;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .demo-cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .demo-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .demo-phone {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 30px 0;
+            letter-spacing: 3px;
+        }
+        
+        .demo-instruction {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 40px;
+        }
+        
+        .guarantee {
+            background: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .guarantee-badge {
+            display: inline-block;
+            background: #00b894;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background: #2d3436;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero .subtitle { font-size: 1.2rem; }
+            .problem h2, .solution h2, .social-proof h2, .demo-cta h2 {
+                font-size: 1.8rem;
+            }
+            .demo-phone { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>24/7 AI Receptionist</h1>
+        <p class="subtitle">Never Miss Another Lead Again</p>
+        <a href="https://calendly.com/supermassive/15min" class="cta-button">Book Free Demo</a>
+        <p class="stat">Over 50% of customers go with whoever responds FIRST</p>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <h2>You're Losing Money Every Day</h2>
+        <div class="pain-points">
+            <div class="pain-point">
+                <strong>❌ Phone rings while you're on a job</strong><br>
+                Customer calls 3 more companies. One of them answers. They get the job. You lose $500-$3,000.
+            </div>
+            <div class="pain-point">
+                <strong>❌ Text comes in at 9pm on Saturday</strong><br>
+                You see it Monday morning. They already booked someone else who replied in 5 minutes.
+            </div>
+            <div class="pain-point">
+                <strong>❌ Facebook DM while you're sleeping</strong><br>
+                Hot lead wants service ASAP. By the time you wake up, they've moved on.
+            </div>
+            <div class="pain-point">
+                <strong>❌ Hiring a receptionist costs $3,000+/month</strong><br>
+                Plus benefits, training, sick days, and they still can't work 24/7.
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <h2>Meet Voxable AI</h2>
+        <p class="intro">Your 7-in-1 AI Sales Receptionist that works 24/7, responds instantly, and books appointments automatically.</p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📞</div>
+                <h3>Phone Calls</h3>
+                <p>Answers every call with human-like voice. Qualifies leads, answers FAQs, books appointments.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">💬</div>
+                <h3>SMS & WhatsApp</h3>
+                <p>Instant intelligent replies to text messages. Handles back-and-forth conversations naturally.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h3>Social Media</h3>
+                <p>Responds to Facebook & Instagram DMs and comments automatically. Never leave customers hanging.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">💻</div>
+                <h3>Website Chat</h3>
+                <p>24/7 live chat on your website. Captures leads before they bounce to competitors.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📧</div>
+                <h3>Email</h3>
+                <p>Reads, understands, and responds to emails automatically. Only shows you what's important.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📅</div>
+                <h3>Auto Booking</h3>
+                <p>Books appointments directly into your calendar. No double-booking, no back-and-forth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <h2>Real Results from Real Businesses</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p class="testimonial-text">"We haven't missed a single lead in 3 months. The AI picks up instantly, books appointments, and even handles common questions. Game changer."</p>
+                <p class="testimonial-author">— Mike B., Contractor</p>
+            </div>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"Clients literally comment on how responsive we are now. The AI responds to DMs and texts at 2am. I wake up to booked appointments."</p>
+                <p class="testimonial-author">— Jessica A., Salon Owner</p>
+            </div>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"Every call gets answered instantly, even when we're swamped. My team can focus on the actual work instead of playing phone tag."</p>
+                <p class="testimonial-author">— Sam S., HVAC Company</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo CTA -->
+    <section class="demo-cta">
+        <h2>Try It Right Now</h2>
+        <p class="demo-instruction">Call our demo line and talk to the AI yourself:</p>
+        <p class="demo-phone">📞 267-550-0466</p>
+        <p class="demo-instruction">Ask it anything. Try to stump it. See how it books appointments.</p>
+        <a href="https://calendly.com/supermassive/15min" class="cta-button">Book Your Free Demo</a>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="guarantee">
+        <div class="guarantee-badge">30-Day Money-Back Guarantee</div>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+            If Voxable doesn't book you at least one extra job this month, you pay nothing. 
+            100% done-for-you setup in under 60 seconds. Cancel anytime.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Voxable AI. Never miss another lead.</p>
+        <p style="margin-top: 10px;">
+            <a href="https://calendly.com/supermassive/15min" style="color: #667eea;">Book Demo</a> • 
+            <a href="tel:267-550-0466" style="color: #667eea;">267-550-0466</a>
+        </p>
+    </footer>
+</body>
+</html>

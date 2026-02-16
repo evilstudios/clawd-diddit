@@ -1,0 +1,4 @@
+firstName,lastName,email,companyName,businessType,phone,city,state,website,customField1
+Mike,Johnson,mike@quickplumbingtx.com,Quick Plumbing TX,plumber,512-555-0123,Austin,TX,quickplumbingtx.com,"Google Maps - 4.8 stars, 89 reviews"
+Sarah,Martinez,sarah@elitehvacla.com,Elite HVAC LA,hvac,323-555-0456,Los Angeles,CA,elitehvacla.com,"Google Maps - 4.6 stars, 124 reviews"
+Tom,Wilson,info@wilsonelectricnyc.com,Wilson Electric NYC,electrician,212-555-0789,New York,NY,wilsonelectricnyc.com,"Google Maps - 4.9 stars, 203 reviews"
