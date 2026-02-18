@@ -3,7 +3,7 @@
 Evil Apples - Google Play Store Monitor
 Pulls downloads, revenue, ratings, and reviews
 """
-
+import os
 import json
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -12,7 +12,7 @@ from googleapiclient.discovery import build
 
 # Configuration
 SCRIPT_DIR = Path(__file__).parent
-SERVICE_ACCOUNT_FILE = SCRIPT_DIR / "google-play-service-account.json"
+SERVICE_ACCOUNT_FILE = Path(os.getenv("GOOGLE_PLAY_SERVICE_ACCOUNT_JSON", str(SCRIPT_DIR / "google-play-service-account.json")))
 DATA_DIR = SCRIPT_DIR / "play-data"
 DATA_DIR.mkdir(exist_ok=True)
 
