@@ -1,14 +1,13 @@
-@'
-# Never commit credentials
+# Never commit credentials / keys
 *.json
 *.p8
 *.pem
 *.key
-'@ | Set-Content -Encoding ASCII projects/evil-apples/.gitignore
 
-@'
+# Data snapshots
+play-data/
+revenue-data/
 
 # Python
 __pycache__/
 *.pyc
-'@ | Add-Content -Encoding ASCII .gitignore
