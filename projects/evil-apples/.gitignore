@@ -1,13 +1,8 @@
-# Never commit credentials / keys
+# Never commit credentials / secrets
 *.json
 *.p8
 *.pem
 *.key
 
-# Data snapshots
-play-data/
-revenue-data/
-
-# Python
-__pycache__/
-*.pyc
+# Allow docs / non-secret json if needed (add exceptions here)
+!.eslintrc.json

@@ -1,2 +1,10 @@
 projects/lylys/app/node_modules/
 projects/lylys/app/.next/
+
+# Python
+__pycache__/
+*.pyc
+
+# Python
+__pycache__/
+*.pyc
